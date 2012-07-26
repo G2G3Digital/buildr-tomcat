@@ -1,4 +1,6 @@
 _reports
 java/lib/com
 java/target
+java/.classpath
+java/.project
 buildr-tomcat-0.0.1.gem

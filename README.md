@@ -45,3 +45,10 @@ Usage
 
 	end
 
+Modification
+------------
+If you need to modify the Java code (in *java/src/main/java*), there's a Buildr *buildfile* in *java/*.
+Simply execute '''buildr eclipse''' to generate the necessary Eclipse project files, and import as usual.
+(You can do IDEA too, if that's your thing).
+
+You can rebuild the whole thing (including the Java) and repackage as a Gem by running '''build.sh'''.
