@@ -5,14 +5,16 @@ buildr-tomcat provides a plugin for Buildr that allows you to run a war-packaged
 
 It is largely based on the Jetty plugin, but is somewhat simplified.
 
-Installation:
+Installation
+------------
 
 	git clone https://github.com/technophobia/buildr-tomcat.git
 	cd buildr-tomcat
 	./build.sh
 	gem install ./buildr-tomcat-0.0.1.gem
 
-Usage:
+Usage
+-----
 
 	require 'tomcat'
 	
