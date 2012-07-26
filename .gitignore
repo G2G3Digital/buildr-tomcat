@@ -1,1 +1,4 @@
 _reports
+java/lib/com
+java/target
+buildr-tomcat-0.0.1.gem
