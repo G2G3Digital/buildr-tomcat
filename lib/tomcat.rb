@@ -30,6 +30,18 @@ class Tomcat
         @instance ||= Tomcat.new("", URL)
       end
 
+      #
+      # Explode a war-file into the target directory.
+      #
+      #
+      def explode(project)
+        name = project.name.split(':').last
+        dirname = "#{name}/target/#{name}-#{VERSION_NUMBER}"
+
+        if !File.exists? dirname
+          system("unzip -q #{name}/target/#{name}-#{VERSION_NUMBER}.war -d #{dirname}")
+        end
+      end
     end
 
     def initialize(name, url, webAppLocation) #:nodoc:
@@ -146,6 +158,8 @@ class Tomcat
     def use(*prereqs, &block)
       @use.enhance prereqs, &block
     end
+
+
 
   protected
 
