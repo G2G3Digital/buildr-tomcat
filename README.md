@@ -2,7 +2,8 @@ buildr-tomcat
 =============
 
 buildr-tomcat provides a plugin for Buildr that allows you to run a war-packaged project in an embedded Tomcat.
-It is largely based on the Jetty pplugin, but is somewhat simplified.
+
+It is largely based on the Jetty plugin, but is somewhat simplified.
 
 Example:
 
@@ -11,8 +12,9 @@ Example:
 		package(:war)
 
 		task('tomcat') do |task|
+			name = 'my-webapp'
 			Buildr::Tomcat::explode(self)
-			Buildr::Tomcat.new("crsc", "http://localhost:8084/my-webapp", "my-webapp/target/my-webapp-#{VERSION_NUMBER}").run
+			Buildr::Tomcat.new(name, "http://localhost:8084/#{name}", "#{name}/target/#{name}-#{VERSION_NUMBER}").run
 
 			trap 'SIGINT' do
 				puts "Stopping Tomcat"
