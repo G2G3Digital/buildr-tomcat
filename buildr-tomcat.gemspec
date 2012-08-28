@@ -2,7 +2,7 @@ $LOAD_PATH.unshift 'lib'
 
 Gem::Specification.new do |s|
   s.name              = "buildr-tomcat"
-  s.version           = "0.0.1"
+  s.version           = "0.0.2"
   s.date              = '2012-07-26'
   s.summary           = "Tomcat plugin for Buildr"
   s.homepage          = "http://github.com/technophobia/buildr-tomcat"
