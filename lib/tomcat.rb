@@ -10,7 +10,6 @@ class Tomcat
 
     TOMCAT_VERSION = '7.0.21'
     TOMCAT = [ "org.apache.tomcat.embed:tomcat-embed-jasper:jar:#{TOMCAT_VERSION}", "org.apache.tomcat:tomcat-catalina:jar:#{TOMCAT_VERSION}", "org.apache.tomcat:tomcat-jasper:jar:#{TOMCAT_VERSION}", "org.apache.tomcat:tomcat-servlet-api:jar:#{TOMCAT_VERSION}", "org.apache.tomcat.embed:tomcat-embed-core:jar:#{TOMCAT_VERSION}", "org.apache.tomcat.embed:tomcat-embed-logging-log4j:jar:#{TOMCAT_VERSION}" ]
-    TOMCAT << 'buildr-tomcat:buildr-tomcat:jar:1.0.0'
 
     Java.classpath << File.dirname(__FILE__)
     Java.classpath << TOMCAT
