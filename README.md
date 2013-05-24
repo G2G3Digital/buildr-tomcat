@@ -11,7 +11,7 @@ Installation
 	git clone https://github.com/technophobia/buildr-tomcat.git
 	cd buildr-tomcat
 	./build.sh
-	gem install ./buildr-tomcat-0.0.1.gem
+	gem install ./buildr-tomcat-0.0.2.gem
 
 Usage
 -----
